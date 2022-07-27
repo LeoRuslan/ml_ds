@@ -1,6 +1,5 @@
 import pandas as pd
 import pickle
-import time
 
 from common_function import clean_dataset
 
