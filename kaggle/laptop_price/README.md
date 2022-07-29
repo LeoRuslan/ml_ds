@@ -1,3 +1,24 @@
+For local development we need create environment:
+```
+conda create -n laptop_price python=3.10
+```
+For activation this environment we use command:
+```
+conda activate laptop_price
+```
+
+To deactivate an environment we use command:
+```
+conda deacticate
+```
+
+For installation packages we use this command:
+```
+pip install -r requirements.txt
+```
+
+==================================================================================================
+
 I try build model that can predict laptop price according to their characteristics.
 
 I think it is interesting problem, because it is good idea to evaluate laptop according to characteristics.  
@@ -38,13 +59,13 @@ For this regression I used `mean_absolute_error`. I choose `XGBRegressor`, becau
 For building Dockerfile run this command 
 
 ```
-$ docker build -t midterm_image -f Dockerfile .
+$ docker build -t laptop_price_image -f Dockerfile .
 ```
 
 For running docker, execute this command 
 
 ```
-docker run -it --rm -p 9696:9696 midterm_image
+docker run -it --rm -p 9696:9696 laptop_price_image
 ```
 
 
